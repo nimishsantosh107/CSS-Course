@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #d6e5ff;
+    color: #333;
+    line-height: 1.5;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.flex-project img {
+    max-width: 100%;
+}
+
+.flex-project h1,
+.flex-project h2 {
+    margin-bottom: 15px;
+}
+
+.flex-project .container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.flex-project .navbar {
+    background: #3474e6;
+    color: white;
+    height: 50px;
+}
+
+.flex-project .navbar .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-project .navbar .container .logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.flex-project .navbar .container a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.flex-project .navbar .container a:hover {
+    color: #a1c3ff;
+}
+
+.flex-project .header {
+    background: #0151cc;
+    color: white;
+    min-height: 400px;
+}
+
+.flex-project .header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-project .header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.flex-project .header img {
+    max-width: 400px;
+}
+
+.flex-project .boxes .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.flex-project .box {
+    flex: 1;
+    /* min-width: 300px; */
+    background: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* applicable when screen size is less than 768 */
+@media (max-width: 768px) {
+    .flex-project .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-project .boxes .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

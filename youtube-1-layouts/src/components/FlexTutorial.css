@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-tutorial .flex-container {
+    /* BASE PROPERTIES */
+    height: 200px;
+    background-color: #c4c4c4;
+    /* FLEX CONTAINER PROPERTIES */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* MAIN AXIS */
+    align-items: center; /* CROSS AXIS */
+    /* flex-wrap: wrap; */
+}
+
+.flex-tutorial .flex-item {
+    /* BASE PROPERTIES */
+    /* width: 100px; */
+    height: 50px;
+    margin: 10px;
+    background: #2a94eb;
+    color: white;
+    /* FLEX CONTAINER PROPERTIES */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* FLEX ITEMS PROPERTIES */
+    /* flex-basis: 300px; */ /* BASIS == WIDTH */
+    flex: 1 1 300px; /* GROW SHRINK BASIS */
+}
+
+.flex-tutorial .flex-item:nth-of-type(1) {
+    /* FLEX ITEMS PROPERTIES */
+    order: 2;
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+}
+
+.flex-tutorial .flex-item:nth-of-type(2) {
+    /* FLEX ITEMS PROPERTIES */
+    order: 3;
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+}
+
+.flex-tutorial .flex-item:nth-of-type(3) {
+    /* FLEX ITEMS PROPERTIES */
+    align-self: start;
+    order: 1;
+    /* flex-grow: 3; */
+    /* flex-shrink: 1; */
+}
