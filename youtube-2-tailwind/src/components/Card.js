@@ -1,6 +1,6 @@
 const Card = ({ src }) => {
     return (
-        <div>
+        <div className="mt-8">
             <img src={src} />
             <div>
                 <span>Dish 1</span>

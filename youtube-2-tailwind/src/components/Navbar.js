@@ -2,7 +2,7 @@ const Navbar = (props) => {
     return (
         <nav>
             <div>
-                <h1>
+                <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                     <a href="/">TailWind Bro</a>
                 </h1>
             </div>
