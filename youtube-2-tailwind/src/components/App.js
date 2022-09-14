@@ -12,10 +12,16 @@ const App = () => {
             {/* MAIN */}
             <main className="px-16 py-6 bg-gray-200 md: col-span-2">
                 <div className="text-primary flex justify-center md:justify-end">
-                    <a href="#" className="button md:border-2 border-primary">
+                    <a
+                        href="#"
+                        className="button md:border-2 border-primary hover:bg-primary hover:text-white transition"
+                    >
                         Log in
                     </a>
-                    <a href="#" className="button md:border-2 border-primary ml-2">
+                    <a
+                        href="#"
+                        className="button md:border-2 border-primary hover:bg-primary hover:text-white transition ml-2"
+                    >
                         Sign Up
                     </a>
                 </div>
@@ -47,7 +53,7 @@ const App = () => {
                     </div>
 
                     <div className="flex justify-center mt-6">
-                        <div className="button bg-secondary-100 text-secondary-200 p-2 rounded-md">
+                        <div className="button bg-secondary-100 text-secondary-200 p-2 rounded-md hover:shadow-inner">
                             Load more...
                         </div>
                     </div>
