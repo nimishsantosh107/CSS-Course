@@ -3,17 +3,19 @@ import Card from "./Card";
 
 const App = () => {
     return (
-        <div className="text-gray-700 font-body">
+        <div className="text-gray-700 font-body grid md:grid-cols-3">
             {/* NAVBAR */}
-            <div className="">
+            <div className="md:col-span-1">
                 <Navbar />
             </div>
             {/* NAVBAR END */}
             {/* MAIN */}
-            <main className="px-16 py-6 bg-gray-200">
+            <main className="px-16 py-6 bg-gray-200 md: col-span-2">
                 <div className="text-primary flex justify-center md:justify-end">
-                    <a href="#">Log in</a>
-                    <a href="#" className="ml-2">
+                    <a href="#" className="button md:border-2 border-primary">
+                        Log in
+                    </a>
+                    <a href="#" className="button md:border-2 border-primary ml-2">
                         Sign Up
                     </a>
                 </div>
@@ -24,10 +26,10 @@ const App = () => {
                 </header>
 
                 <div>
-                    <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
+                    <h4 className="font-bold mt-12 pb-2 border-b border-gray-300">
                         Latest Recipes
                     </h4>
-                    <div>
+                    <div className="card-grid">
                         {/* CARDS */}
                         <Card src="/image.png" />
                         <Card src="/image.png" />
@@ -37,15 +39,15 @@ const App = () => {
                     <h4 className="font-bold mt-12 pb-2 border-b border-gray-300">
                         PopularRecipes
                     </h4>
-                    <div>
+                    <div className="card-grid">
                         {/* CARDS */}
                         <Card src="/image.png" />
                         <Card src="/image.png" />
                         <Card src="/image.png" />
                     </div>
 
-                    <div className="flex justify-center">
-                        <div className="bg-secondary-100 text-white p-2 rounded-md hover:bg-secondary-200 transition">
+                    <div className="flex justify-center mt-6">
+                        <div className="button bg-secondary-100 text-secondary-200 p-2 rounded-md">
                             Load more...
                         </div>
                     </div>
