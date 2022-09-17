@@ -3,14 +3,14 @@ import Card from "./Card";
 
 const App = () => {
     return (
-        <div className="text-gray-700 font-body grid md:grid-cols-3">
+        <div className="text-gray-700 font-body md:grid md:grid-cols-3 h-screen">
             {/* NAVBAR */}
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 md:flex md:justify-end">
                 <Navbar />
             </div>
             {/* NAVBAR END */}
             {/* MAIN */}
-            <main className="px-16 py-6 bg-gray-200 md: col-span-2">
+            <main className="px-16 py-6 bg-gray-200 md:col-span-2">
                 <div className="text-primary flex justify-center md:justify-end">
                     <a
                         href="#"
